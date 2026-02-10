@@ -1,0 +1,23 @@
+service: finny-website
+image: zelusottomayor/finny-website
+
+servers:
+  web:
+    hosts:
+      - 143.110.169.251
+    labels:
+      traefik.http.routers.finny-website.rule: Host(`finnybot.com`) || Host(`www.finnybot.com`)
+      traefik.http.routers.finny-website.entrypoints: websecure
+      traefik.http.routers.finny-website.tls.certresolver: letsencrypt
+
+registry:
+  server: docker.io
+  username: zelusottomayor
+
+builder:
+  arch: amd64
+
+healthcheck:
+  path: /
+  port: 80
+  interval: 30

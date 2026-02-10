@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finny — AI Personal Finance Bot for Telegram | Track Spending Effortlessly</title>
+  <meta name="description" content="Finny is your AI personal accountant bot on Telegram. Track spending with text, voice, or receipt photos. Get clear financial visibility without spreadsheets." />
+  <meta name="keywords" content="AI personal finance bot, personal accountant bot, Telegram finance bot, expense tracker bot, AI budget assistant, spending tracker Telegram" />
+  <link rel="canonical" href="https://finnybot.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://finnybot.com/" />
+  <meta property="og:title" content="Finny — AI Personal Finance Bot for Telegram" />
+  <meta property="og:description" content="Track spending in Telegram with text, voice, or receipt photos. Your AI personal accountant that turns daily messages into clean financial visibility." />
+  <meta property="og:image" content="https://finnybot.com/og-image.png" />
+  <meta property="og:site_name" content="Finny" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Finny — AI Personal Finance Bot for Telegram" />
+  <meta name="twitter:description" content="Track spending in Telegram with text, voice, or receipt photos. Your AI personal accountant." />
+  <meta name="twitter:image" content="https://finnybot.com/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Finny?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finny is an AI personal finance bot that lives in Telegram. You can track your spending by sending text messages, voice notes, or receipt photos — and Finny automatically categorizes and tracks everything for you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I start using Finny?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply open Telegram and search for @FinnyFinanceBot, or visit t.me/FinnyFinanceBot. Start chatting to log your first expense — no signup or app download required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Finny free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finny offers a free tier for basic expense tracking. Premium features like advanced analytics, receipt OCR, and voice input are available with a subscription."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Finny read receipts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Send a photo of any receipt and Finny will use OCR to extract the total, individual items, and automatically categorize everything into your spending timeline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Finny support voice input?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Send a Telegram voice note like 'Spent 15 euros on lunch' and Finny will parse it, categorize the expense, and log it instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Finny different from other finance apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finny lives where you already are — Telegram. No separate app to open, no spreadsheets to maintain. It takes under 4 seconds to log an expense, making it the fastest way to track your spending."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Software Application Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Finny",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Telegram",
+    "description": "AI personal finance bot for Telegram. Track spending with text, voice, or receipt photos.",
+    "url": "https://finnybot.com",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="grain">
+  <div class="bg"></div>
+  <div class="floaters" aria-hidden="true">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="Finny home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#1B7F4E"/><text x="14" y="19" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="Inter,sans-serif">F</text></svg>
+        <span>Finny</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary btn-sm" href="https://t.me/FinnyFinanceBot" target="_blank" rel="noopener">Try Finny</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero reveal" id="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <h1>Your AI personal accountant, right in Telegram.</h1>
+          <p class="lead">Send a message, voice note, or receipt photo — Finny tracks, categorizes, and analyzes your spending automatically. No spreadsheets. No extra apps.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://t.me/FinnyFinanceBot" target="_blank" rel="noopener">Start with @FinnyFinanceBot →</a>
+          </div>
+        </div>
+        <div class="phone-wrap reveal" aria-label="Telegram conversation mockup showing Finny AI finance bot">
+          <div class="phone">
+            <div class="phone-inner">
+              <div class="notch"></div>
+              <div class="telegram">
+                <div class="tg-head">
+                  <div class="tg-avatar">F</div>
+                  <div><strong style="font-size:13px">Finny</strong><div style="font-size:11px;color:#9fb3c5">online</div></div>
+                </div>
+                <div class="chat">
+                  <div class="bubble u">Spent 23.50 at Lidl on groceries <span class="t">19:07</span></div>
+                  <div class="bubble b">✅ Logged. Food category, €23.50. <span class="t">19:07</span></div>
+                  <div class="bubble u">🧾 <em style="opacity:.7">[receipt photo]</em> <span class="t">19:12</span></div>
+                  <div class="bubble b">📸 Captured €47.20 — 12 items recognized from Pingo Doce. <span class="t">19:12</span></div>
+                  <div class="bubble u">Any warnings this week? <span class="t">19:14</span></div>
+                  <div class="bubble b">⚠️ Dining is 22% above your weekly baseline. Want me to break it down? <span class="t">19:14</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social proof strip -->
+    <section class="intro reveal">
+      <div class="container">
+        <h2 id="features">Fast capture. Clear patterns.</h2>
+        <p>Finny is the AI personal finance bot that turns Telegram messages into structured financial data. Log expenses in seconds, get insights in real time.</p>
+        <div class="strip">
+          <div class="metric reveal"><strong>&lt; 4s</strong><span>average time to log an expense</span></div>
+          <div class="metric reveal"><strong>24/7</strong><span>always-on AI tracking in your chat</span></div>
+          <div class="metric reveal"><strong>1 thread</strong><span>all spending context in one timeline</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Product -->
+    <section class="product reveal">
+      <div class="container product-grid">
+        <div class="dashboard reveal" aria-label="Finny spending dashboard preview">
+          <div class="dash-top"><strong>January Snapshot</strong><span style="font-size:12px;color:#8ea0ae">Updated just now</span></div>
+          <div class="mini-kpi">
+            <div><span>Total spend</span><strong>€1,248</strong></div>
+            <div><span>Saved vs avg</span><strong>€184</strong></div>
+            <div><span>Top category</span><strong>Food</strong></div>
+          </div>
+          <div class="bars">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+        <div class="reveal">
+          <h2>A dashboard that explains your month.</h2>
+          <p style="color:var(--dark-text-2);font-size:18px;">No manual cleanup. Your AI personal accountant bot structures expenses and keeps category trends readable, so decisions happen faster.</p>
+          <div class="flowline">
+            <div class="line-item">📝 Text and voice inputs normalized automatically</div>
+            <div class="line-item">📸 Receipt OCR merged into your timeline</div>
+            <div class="line-item">📊 Weekly pattern shifts highlighted early</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="split reveal" id="how-it-works">
+      <div class="container split-grid">
+        <div class="reveal">
+          <h2>Built for daily use, not monthly audits.</h2>
+          <p>The best Telegram finance bot captures spending where you already are. No separate app routine. Consistency stays high, blind spots stay low.</p>
+        </div>
+        <div class="reveal" style="padding:20px;background:rgba(27,127,78,.08);border-radius:14px;">
+          <div style="font-weight:700;font-size:22px;letter-spacing:-.02em;margin-bottom:12px;">How Finny works</div>
+          <div class="how-steps">
+            <div class="how-step"><span class="step-num">1</span><span>Send a message, voice note, or receipt photo</span></div>
+            <div class="how-step"><span class="step-num">2</span><span>Finny classifies and logs the expense instantly</span></div>
+            <div class="how-step"><span class="step-num">3</span><span>Track trends and get proactive spending alerts</span></div>
+            <div class="how-step"><span class="step-num">4</span><span>Ask questions anytime — "How much did I spend on food?"</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section reveal" id="faq">
+      <div class="container">
+        <h2 style="text-align:center;margin-bottom:36px;">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>What is Finny?</summary>
+            <p>Finny is an AI personal finance bot that lives in Telegram. Track your spending by sending text messages, voice notes, or receipt photos — Finny automatically categorizes and tracks everything for you.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I start using Finny?</summary>
+            <p>Open Telegram and search for @FinnyFinanceBot, or visit <a href="https://t.me/FinnyFinanceBot">t.me/FinnyFinanceBot</a>. Start chatting to log your first expense — no signup or app download required.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is Finny free to use?</summary>
+            <p>Finny offers a free tier for basic expense tracking. Premium features like advanced analytics, receipt OCR, and voice input are available with a subscription.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can Finny read receipts?</summary>
+            <p>Yes! Send a photo of any receipt and Finny will use OCR to extract the total, individual items, and automatically categorize everything into your spending timeline.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Finny support voice input?</summary>
+            <p>Absolutely. Send a Telegram voice note like "Spent 15 euros on lunch" and Finny will parse it, categorize the expense, and log it instantly.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How is Finny different from other finance apps?</summary>
+            <p>Finny lives where you already are — Telegram. No separate app to open, no spreadsheets to maintain. It takes under 4 seconds to log an expense, making it the fastest way to track your spending.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta reveal">
+      <div class="container">
+        <h2>Know your money every day.</h2>
+        <p>Start tracking directly in Telegram and get structured spending visibility without changing your routine. Your AI personal accountant is one message away.</p>
+        <a class="btn btn-primary" href="https://t.me/FinnyFinanceBot" target="_blank" rel="noopener">Open Finny on Telegram →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Finny. Your AI personal finance bot.</p>
+      <p style="font-size:13px;color:var(--text-2);margin-top:4px;">
+        <a href="https://t.me/FinnyFinanceBot">Telegram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
